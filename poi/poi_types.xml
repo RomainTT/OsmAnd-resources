@@ -2299,7 +2299,13 @@
 						<poi_additional name="hiking_yes" tag="hiking" value="yes"/>
 					</poi_additional_category>
 				</poi_type>
-				<poi_type name="motorcycle_parking" tag="amenity" value="motorcycle_parking" excluded_poi_additional_category="wheelchair_accessibility,internet_access_type"/>
+				<poi_type name="motorcycle_parking" tag="amenity" value="motorcycle_parking" excluded_poi_additional_category="wheelchair_accessibility,internet_access_type">
+					<poi_additional_category name="motorcycle_parking_type" icon="motorcycle_parking">
+						<poi_additional name="motorcycle_parking_floor" tag="motorcycle_parking" value="floor"/>
+						<poi_additional name="motorcycle_parking_hoops" tag="motorcycle_parking" value="hoops"/>
+						<poi_additional name="motorcycle_parking_bollard" tag="motorcycle_parking" value="bollard"/>
+					</poi_additional_category>
+                </poi_type>
 				<poi_type name="parking_entrance" tag="amenity" value="parking_entrance" excluded_poi_additional_category="wheelchair_accessibility,internet_access_type" poi_additional_category="park_ride,access_motorcycle,access_moped,access_mofa,access_disabled"/>
 				<poi_type name="parking_space" tag="amenity" value="parking_space" poi_additional_category="access_motorcycle,access_moped,access_mofa,access_disabled"/>
 				<poi_reference name="car_rental"/>
